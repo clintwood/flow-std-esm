@@ -1,0 +1,21 @@
+{
+  "name": "flow-std-esm",
+  "version": "1.0.0",
+  "description": "Flow Std Esm Issue Project",
+  "main": "with-flow/index.mjs",
+  "scripts": {
+    "build": "flow-remove-types -p -d with-flow-removed/ with-flow/",
+    "with-flow-no-esm": "node -r flow-remove-types/register ./with-flow-no-esm/index.mjs",
+    "with-flow-removed": "node -r @std/esm ./with-flow-removed/index.mjs",
+    "with-flow-1": "node -r @std/esm -r flow-remove-types/register ./with-flow/index.mjs",
+    "with-flow-2": "node -r flow-remove-types/register -r @std/esm ./with-flow/index.mjs"
+  },
+  "author": "Clint Wood",
+  "license": "ISC",
+  "devDependencies": {
+    "@std/esm": "^0.11.3",
+    "flow-remove-types": "github:clintwood/flow-remove-types#esm-modules-support"
+  },
+  "dependencies": {}
+
+}
