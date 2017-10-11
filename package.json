@@ -14,8 +14,7 @@
   "license": "ISC",
   "devDependencies": {
     "@std/esm": "^0.11.3",
-    "flow-remove-types": "github:clintwood/flow-remove-types#esm-modules-support"
+    "flow-remove-types": "github:clintwood/flow-remove-types#pirates-require-hook"
   },
   "dependencies": {}
-
 }
