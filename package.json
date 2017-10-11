@@ -9,6 +9,7 @@
     "with-flow-removed": "node -r @std/esm ./with-flow-removed/index.mjs",
     "with-flow-1": "node -r @std/esm -r flow-remove-types/register ./with-flow/index.mjs",
     "with-flow-2": "node -r flow-remove-types/register -r @std/esm ./with-flow/index.mjs",
+    "pirates-hook-no-esm": "node -r pirates-hook ./with-pirates-hook-no-esm/index.mjs",
     "pirates-hook-1": "node -r @std/esm -r pirates-hook ./with-flow-removed/index.mjs",
     "pirates-hook-2": "node -r pirates-hook -r @std/esm ./with-flow-removed/index.mjs"
   },
